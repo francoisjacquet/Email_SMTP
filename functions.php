@@ -19,7 +19,9 @@ function EmailSMTPTriggered( $hook_tag )
 		return false;
 	}
 
-	if ( empty( Config( 'EMAIL_SMTP_HOST' ) ) )
+	$host = Config( 'EMAIL_SMTP_HOST' );
+
+	if ( empty( $host ) )
 	{
 		// No SMTP host / server configured.
 		return false;
@@ -27,7 +29,7 @@ function EmailSMTPTriggered( $hook_tag )
 
 	// Get config options.
 	$smtp = array(
-		'EMAIL_SMTP_HOST' => Config( 'EMAIL_SMTP_HOST' ),
+		'EMAIL_SMTP_HOST' => $host,
 		'EMAIL_SMTP_PORT' => (int) Config( 'EMAIL_SMTP_PORT' ),
 		'EMAIL_SMTP_USERNAME' => Config( 'EMAIL_SMTP_USERNAME' ),
 		'EMAIL_SMTP_PASSWORD' => Config( 'EMAIL_SMTP_PASSWORD' ),
