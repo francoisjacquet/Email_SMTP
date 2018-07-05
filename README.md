@@ -1,3 +1,8 @@
+GitLab
+------
+
+RosarioSIS code is now hosted at [**GitLab**](https://gitlab.com/francoisjacquet/Email_SMTP)!
+
 # Email SMTP Plugin
 
 ![screenshot](https://raw.githubusercontent.com/francoisjacquet/Email_SMTP/master/screenshot.png)
